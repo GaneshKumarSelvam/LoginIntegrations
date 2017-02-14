@@ -10,11 +10,21 @@ Login Integrations like Instagram Login, Facebook Login, Flicker Login, Instagra
 Sharing images through Instagram, Facebook, Whatsapp, and Twitter.
 
 
-Go for AppDelegate.m
-crete an account with your application in Flicker Account with specified Bundle ID and replace your Flicker API Key and Secret Key
 
-    -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption
+crete an account with your application in Flicker Developer Account with specified Bundle ID and replace your Flicker API Key and Secrete Key
+Go to AppDelegate.m
+    -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption{
     NSString *apiKey = @"Flicker API Key";
     NSString *secret = @"Flicker Secret Key";
+    }
+The same way create a application in Instagram Devleoper Account with the specified Bundle ID and replace your Instagram API key and Secrete Key
+Go to InstagramLoginViewController.m
+
+Change 
+    #define INSTAGRAM_CLIENT_ID  @"Instagram API Key"
+    #define INSTAGRAM_CLIENTSERCRET  @"Instagram Secret Key"
+
+
+
     
         
