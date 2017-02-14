@@ -37,11 +37,10 @@ Got to Target --> Info  -->URL Types
 Add LinkedIn , Facebook, GooglePlus URL Types in Targets as same in Demo.
 
 Login Page
-
-
-<p align="center">
-  <img src="![loginpage](https://cloud.githubusercontent.com/assets/22673703/22917551/7feef2fe-f2ab-11e6-8d91-567d32f70ac7.PNG)" width="350"/>
-  <img src="your_relative_path_here_number_2_large_name" width="350"/>
-</p>
-    
+<div>
+<br>
+<img height="500" style="float:left; margin-right: 25px;" src="https://cloud.githubusercontent.com/assets/22673703/22917551/7feef2fe-f2ab-11e6-8d91-567d32f70ac7.PNG"/>
+<img height="500" style="float:right;" src="https://cloud.githubusercontent.com/assets/22673703/22917553/7ff47e9a-f2ab-11e6-854e-d1700eaca26d.PNG"/>
+<br>
+</div>
         
