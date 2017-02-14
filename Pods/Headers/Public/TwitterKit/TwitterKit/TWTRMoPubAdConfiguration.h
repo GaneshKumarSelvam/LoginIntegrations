@@ -1,0 +1,1 @@
+../../../../TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubAdConfiguration.h

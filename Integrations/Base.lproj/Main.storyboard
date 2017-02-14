@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sL9-dc-wbu">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY0-vN-tvB">
+                                <rect key="frame" x="122" y="206" width="76" height="30"/>
+                                <state key="normal" title="Login page"/>
+                                <connections>
+                                    <action selector="loginViaButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6IP-Dt-Zmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1J-Ql-KPK">
+                                <rect key="frame" x="77" y="252" width="166" height="30"/>
+                                <state key="normal" title="Pick Image From Gallery"/>
+                                <connections>
+                                    <segue destination="CCC-ES-x80" kind="show" id="ogt-gr-xwT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eY0-vN-tvB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-63.5" id="1Rw-KK-lWR"/>
+                            <constraint firstItem="C1J-Ql-KPK" firstAttribute="top" secondItem="eY0-vN-tvB" secondAttribute="bottom" constant="16" id="DfC-Ql-7rT"/>
+                            <constraint firstItem="C1J-Ql-KPK" firstAttribute="trailing" secondItem="eY0-vN-tvB" secondAttribute="trailing" constant="45" id="bVi-O6-yNU"/>
+                            <constraint firstItem="eY0-vN-tvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yk1-Mg-CCr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZSb-JM-yrK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="114.08450704225352"/>
+        </scene>
+        <!--Photo Picker View Controller-->
+        <scene sceneID="p0t-Hr-nvv">
+            <objects>
+                <viewController storyboardIdentifier="picker" id="CCC-ES-x80" customClass="PhotoPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bcs-zc-7sg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ap6-xG-lc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="koi-RA-9Mw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-nG-re5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="194"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-jg-4Lq">
+                                <rect key="frame" x="123" y="269" width="75" height="30"/>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="pickImageButtonClick:" destination="CCC-ES-x80" eventType="touchUpInside" id="sLv-Jj-oAW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LaR-nG-re5" firstAttribute="centerX" secondItem="ha2-jg-4Lq" secondAttribute="centerX" id="4VR-ic-MIR"/>
+                            <constraint firstItem="ha2-jg-4Lq" firstAttribute="top" secondItem="LaR-nG-re5" secondAttribute="bottom" constant="11" id="JPb-dD-qxt"/>
+                            <constraint firstItem="ha2-jg-4Lq" firstAttribute="centerY" secondItem="koi-RA-9Mw" secondAttribute="centerY" id="QyJ-Ca-1pj"/>
+                            <constraint firstItem="ha2-jg-4Lq" firstAttribute="centerX" secondItem="koi-RA-9Mw" secondAttribute="centerX" id="eBf-M9-1gM"/>
+                            <constraint firstItem="LaR-nG-re5" firstAttribute="top" secondItem="Bcs-zc-7sg" secondAttribute="bottom" id="tKD-ye-3yC"/>
+                            <constraint firstItem="LaR-nG-re5" firstAttribute="leading" secondItem="koi-RA-9Mw" secondAttribute="leading" id="tae-RO-qkR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NJZ-nH-jug"/>
+                    <connections>
+                        <outlet property="imageVIew" destination="LaR-nG-re5" id="3jK-Iz-duP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNS-q8-SXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="828.16901408450701"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="1B2-hD-15n">
+            <objects>
+                <viewController storyboardIdentifier="login" id="4je-vJ-Fga" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xSb-Zo-lbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="eek-Vf-DDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nl9-KD-5Td">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx8-Ob-adP">
+                                <rect key="frame" x="129" y="269" width="63" height="30"/>
+                                <state key="normal" title="Login Via"/>
+                                <connections>
+                                    <action selector="loginButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="g37-3O-58I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8M-Gc-vly">
+                                <rect key="frame" x="104" y="28" width="113" height="30"/>
+                                <state key="normal" title="LInkedIn LogOut"/>
+                                <connections>
+                                    <action selector="linkedInLogOutButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="oPi-Vg-9F7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfy-yp-akH">
+                                <rect key="frame" x="101" y="66" width="119" height="30"/>
+                                <state key="normal" title="Facebook Logout"/>
+                                <connections>
+                                    <action selector="facebookLogoutButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="KuI-MW-hmZ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DTr-gz-eVb">
+                                <rect key="frame" x="101" y="104" width="130" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU3-Ay-OwD">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                        <state key="normal" title="GooglePlus Logout"/>
+                                        <connections>
+                                            <action selector="googlePlusLogoutButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="Xmm-QQ-vdQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-P6-np6">
+                                <rect key="frame" x="104" y="173" width="121" height="30"/>
+                                <state key="normal" title="Instagram Logout"/>
+                                <connections>
+                                    <action selector="instagramLogutButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="daM-cs-TiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jja-3r-1Wf">
+                                <rect key="frame" x="104" y="211" width="97" height="30"/>
+                                <state key="normal" title="Flicker Logout"/>
+                                <connections>
+                                    <action selector="flickerLogoutButtonClikc:" destination="4je-vJ-Fga" eventType="touchUpInside" id="hzS-AG-ThS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0o-15-1nG">
+                                <rect key="frame" x="110" y="142" width="100" height="30"/>
+                                <state key="normal" title="Twitter Logout"/>
+                                <connections>
+                                    <action selector="twitterLogoutButtonClick:" destination="4je-vJ-Fga" eventType="touchUpInside" id="fek-Cq-F1f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o8M-Gc-vly" firstAttribute="top" secondItem="xSb-Zo-lbA" secondAttribute="bottom" constant="8" symbolic="YES" id="0lE-g4-pNZ"/>
+                            <constraint firstItem="j0o-15-1nG" firstAttribute="top" secondItem="DTr-gz-eVb" secondAttribute="bottom" constant="8" symbolic="YES" id="39Y-jc-9MF"/>
+                            <constraint firstItem="kGN-P6-np6" firstAttribute="top" secondItem="j0o-15-1nG" secondAttribute="bottom" constant="1" id="Bxb-5E-ngU"/>
+                            <constraint firstItem="wx8-Ob-adP" firstAttribute="centerY" secondItem="nl9-KD-5Td" secondAttribute="centerY" id="CPU-cn-HJI"/>
+                            <constraint firstItem="o8M-Gc-vly" firstAttribute="centerX" secondItem="nl9-KD-5Td" secondAttribute="centerX" id="Cff-Gz-CZu"/>
+                            <constraint firstItem="DTr-gz-eVb" firstAttribute="top" secondItem="vfy-yp-akH" secondAttribute="bottom" constant="8" symbolic="YES" id="E1e-MT-ZGy"/>
+                            <constraint firstItem="kGN-P6-np6" firstAttribute="leading" secondItem="o8M-Gc-vly" secondAttribute="leading" id="KYY-zH-1ZZ"/>
+                            <constraint firstItem="Jja-3r-1Wf" firstAttribute="top" secondItem="kGN-P6-np6" secondAttribute="bottom" constant="8" symbolic="YES" id="OiQ-X2-fZ3"/>
+                            <constraint firstItem="vfy-yp-akH" firstAttribute="leading" secondItem="DTr-gz-eVb" secondAttribute="leading" id="PTz-2u-fli"/>
+                            <constraint firstItem="o8M-Gc-vly" firstAttribute="centerX" secondItem="vfy-yp-akH" secondAttribute="centerX" id="eMo-wD-fYD"/>
+                            <constraint firstItem="Jja-3r-1Wf" firstAttribute="leading" secondItem="kGN-P6-np6" secondAttribute="leading" id="kFT-Bl-bOF"/>
+                            <constraint firstItem="j0o-15-1nG" firstAttribute="centerX" secondItem="wx8-Ob-adP" secondAttribute="centerX" constant="-0.5" id="mxx-aP-OJy"/>
+                            <constraint firstItem="vfy-yp-akH" firstAttribute="centerX" secondItem="j0o-15-1nG" secondAttribute="centerX" constant="0.5" id="o8k-dO-UrZ"/>
+                            <constraint firstItem="vfy-yp-akH" firstAttribute="top" secondItem="o8M-Gc-vly" secondAttribute="bottom" constant="8" symbolic="YES" id="ymT-lR-wsK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLogoutButtonInstance" destination="vfy-yp-akH" id="cBa-Ur-Orb"/>
+                        <outlet property="flickerLogoutButtonInstance" destination="Jja-3r-1Wf" id="4LW-Rb-5rM"/>
+                        <outlet property="googlePlusLogoutButtonInstance" destination="TU3-Ay-OwD" id="hwo-eA-CXL"/>
+                        <outlet property="instagramlogoutButtonInstance" destination="kGN-P6-np6" id="a73-lH-cQP"/>
+                        <outlet property="linkedInLogoutButtonInstance" destination="o8M-Gc-vly" id="Tg1-zq-aeG"/>
+                        <outlet property="twitterLogoutButtonInstance" destination="j0o-15-1nG" id="YPX-b3-yEw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfc-HZ-ePY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="114"/>
+        </scene>
+        <!--Instagram Login View Controller-->
+        <scene sceneID="16R-jd-aCN">
+            <objects>
+                <viewController storyboardIdentifier="instagramlogin" id="tC5-0s-S9K" customClass="InstagramLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ilh-Li-fQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="o7m-s7-4WR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Ma-12-PLI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWz-Gv-CDN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hML-Po-hKH">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.1512887051" blue="0.19066406250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xWz-Gv-CDN" secondAttribute="trailing" id="A3s-hP-TqR"/>
+                            <constraint firstItem="xWz-Gv-CDN" firstAttribute="top" secondItem="9Ma-12-PLI" secondAttribute="top" id="AH4-SS-KQy"/>
+                            <constraint firstItem="xWz-Gv-CDN" firstAttribute="leading" secondItem="9Ma-12-PLI" secondAttribute="leading" id="DL2-gf-yO4"/>
+                            <constraint firstItem="xWz-Gv-CDN" firstAttribute="bottom" secondItem="o7m-s7-4WR" secondAttribute="top" id="WD8-AC-axC"/>
+                            <constraint firstItem="xWz-Gv-CDN" firstAttribute="centerY" secondItem="hML-Po-hKH" secondAttribute="centerY" id="oDu-LX-njy"/>
+                            <constraint firstItem="xWz-Gv-CDN" firstAttribute="centerX" secondItem="hML-Po-hKH" secondAttribute="centerX" id="uVO-jk-Ct4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginIndicator" destination="hML-Po-hKH" id="WMI-ER-2Tx"/>
+                        <outlet property="loginWebView" destination="xWz-Gv-CDN" id="XIv-am-Slm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PN-ze-SQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829.375" y="114.08450704225352"/>
+        </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="RbQ-BO-o8Q">
+            <objects>
+                <viewController storyboardIdentifier="flickerLogin" id="GwW-uE-WRO" customClass="FKAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ufe-60-VIX"/>
+                        <viewControllerLayoutGuide type="bottom" id="qg4-lo-tpo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HZV-qb-PS7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-rI-DZy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="r65-Sn-Mmf">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cD3-rI-DZy" firstAttribute="leading" secondItem="HZV-qb-PS7" secondAttribute="leading" id="BIy-Mc-tAl"/>
+                            <constraint firstItem="cD3-rI-DZy" firstAttribute="top" secondItem="HZV-qb-PS7" secondAttribute="top" id="Fny-xz-jtK"/>
+                            <constraint firstItem="cD3-rI-DZy" firstAttribute="centerX" secondItem="r65-Sn-Mmf" secondAttribute="centerX" id="KmW-t3-mpc"/>
+                            <constraint firstItem="cD3-rI-DZy" firstAttribute="bottom" secondItem="qg4-lo-tpo" secondAttribute="top" id="P52-zD-qDi"/>
+                            <constraint firstItem="cD3-rI-DZy" firstAttribute="centerY" secondItem="r65-Sn-Mmf" secondAttribute="centerY" id="aTB-1M-7Ai"/>
+                            <constraint firstAttribute="trailing" secondItem="cD3-rI-DZy" secondAttribute="trailing" id="fyL-8m-4zw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="r65-Sn-Mmf" id="KdM-xb-vK3"/>
+                        <outlet property="webView" destination="cD3-rI-DZy" id="G88-Ki-MJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y99-Aq-O7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3609.375" y="113.02816901408451"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HRJ-ra-foN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sL9-dc-wbu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xWD-5X-Kzs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="k3x-lK-A59"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1O-Xk-m9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.5" y="114.08450704225352"/>
+        </scene>
+    </scenes>
+</document>
