@@ -39,8 +39,13 @@ Add LinkedIn , Facebook, GooglePlus URL Types in Targets as same in Demo.
 Login Page
 <div>
 <br>
-<img height="500" style="float:left; margin-right: 25px;" src="https://cloud.githubusercontent.com/assets/22673703/22917551/7feef2fe-f2ab-11e6-8d91-567d32f70ac7.PNG"/>
-<img height="500" style="float:right;" src="https://cloud.githubusercontent.com/assets/22673703/22917553/7ff47e9a-f2ab-11e6-854e-d1700eaca26d.PNG"/>
+<img height="500" style="float:left; margin-right: 25px;" src="https://cloud.githubusercontent.com/assets/22673703/22918680/7eedfe44-f2b1-11e6-8101-e4bd91c6634b.PNG"/>
+<img height="500" style="float:right;" src="https://cloud.githubusercontent.com/assets/22673703/22918683/7ef25462-f2b1-11e6-97b4-9da4cff4795d.PNG"/>
+<br>
+<br>
+<img height="500" style="float:left; margin-right: 25px;" src="https://cloud.githubusercontent.com/assets/22673703/22917552/7fef4e66-f2ab-11e6-8482-c1f8b794d907.PNG"/>
+<img height="500" style="float:right;" 
+src="https://cloud.githubusercontent.com/assets/22673703/22918681/7eee8166-f2b1-11e6-972e-69c2c0f49bd9.PNG "/>
 <br>
 </div>
-        
+       
