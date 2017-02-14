@@ -13,7 +13,7 @@ Sharing images through Instagram, Facebook, Whatsapp, and Twitter.
 
 crete an account with your application in Flicker Developer Account with specified Bundle ID and replace your Flicker API Key and Secrete Key
 Go to AppDelegate.m
-    -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption{
+    -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launch
     NSString *apiKey = @"Flicker API Key";
     NSString *secret = @"Flicker Secret Key";
     }
