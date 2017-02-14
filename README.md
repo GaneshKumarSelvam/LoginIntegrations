@@ -13,6 +13,7 @@ Sharing images through Instagram, Facebook, Whatsapp, and Twitter.
 
 crete an account with your application in Flicker Developer Account with specified Bundle ID and replace your Flicker API Key and Secrete Key
 Go to AppDelegate.m
+
     -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launch
     NSString *apiKey = @"Flicker API Key";
     NSString *secret = @"Flicker Secret Key";
@@ -21,8 +22,19 @@ The same way create a application in Instagram Devleoper Account with the specif
 Go to InstagramLoginViewController.m
 
 Change 
+    
     #define INSTAGRAM_CLIENT_ID  @"Instagram API Key"
     #define INSTAGRAM_CLIENTSERCRET  @"Instagram Secret Key"
+    
+For GooglePlus Login, Create an account in Google Developer accounta with specified Bundle ID and download the Google-Services plist file and copy it to the project.
+
+For Twitter Login Integration Follow Fabric Documentation
+
+In Xcode Project, add URL Schemes of LinkedIn, Facebook, and GooglePlus
+
+Got to Target --> Info  -->URL Types
+
+Add LinkedIn , Facebook, GooglePlus URL Types in Targets as same in Demo.
 
 
 
