@@ -36,7 +36,7 @@ Got to Target --> Info  -->URL Types
 
 Add LinkedIn , Facebook, GooglePlus URL Types in Targets as same in Demo.
 
-Login Page
+<h2>Login Page</h2>
 
 <div>
 <br>
@@ -50,7 +50,8 @@ src="https://cloud.githubusercontent.com/assets/22673703/22918681/7eee8166-f2b1-
 <br>
 </div>
 
-Sharing Page
+<h2>Sharing Page</h2>
+
 <br>
 <img height="500" style="float:left;" src="https://cloud.githubusercontent.com/assets/22673703/22918923/fb4a9c30-f2b2-11e6-9f5a-d922a52c5df6.PNG"/>
 <img height="500" style="float:right;" src="https://cloud.githubusercontent.com/assets/22673703/22918924/fb9e01ae-f2b2-11e6-8720-6cd4ed84c4ae.PNG"/>
